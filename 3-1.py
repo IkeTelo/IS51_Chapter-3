@@ -178,6 +178,9 @@ Methods that Return Boolean Vales
     srt1.isupper() = str1 has at least 1 alphabetic charachter and all of its alphabetic charachters are uppercase.
     str1.ispace() = str1 contains only whitespace charachters
 """
+'''
+!!!!if you submit all lab assigments and get an A on your final, you get an automatic A in the class!!!!
+'''
 
 """
 Simplifying Condtions
@@ -186,3 +189,91 @@ Simplifying Condtions
 # (state == "MD") or (state == "VA") or state == "WV") or (state == "DE")
 #    # can be replaced with the condition
 # state in [ "MD", "VA", "WV", "DE"]
+
+"""
+Logical Operators; if something is not true it is false
+(a) (2 < n) and (n < 6) / test left and right hand side and both need to be true, it is to show if both would be true
+(b) (2 < n) or (n == 6)
+(c) not (n < 6)
+(d) (answ == "Y") or (answ == "y")
+(e) (answ == "Y") and (answ == "y")
+(f) not (answ == "y")
+(g) ((2 < n) and (n == 5 + 1)) or (answ == "No")
+(h) ((n == 2) and (n == 7)) or (answ == "Y")
+(i) (n == 2) and ((n == 7) or (answ == "Y"))
+"""
+# Example
+# n = 10
+# answ = "Y"
+# true_or_false = (n == 2) and ((n == 7) or (answ == "Y"))
+# print (true_or_false)
+
+"""
+Short-Circuit Evaluation
+-   Consider the condition cond1 and cond2
+    - If Python evaluates cond1 as false, it does not bother to check cond2
+-   Similary with cond1 and cond2
+    - If Python finds cond1 true, it does not bother to check further
+- Think why this feature helps for
+(number !=0) and m == (n / number))
+"""
+
+'''
+The bool Data Type
+-   Objects True and False are said to have Boolean data type
+        - Of data type bool
+-   What do these lines display?
+'''
+# Example
+
+# x = 2
+# y = 3
+# var = x < y
+# print(var)
+# x1 = 5
+# print((3 + x1) < 7)
+
+'''
+Methods that Return Boolean Values
+-   Given: strings str1 and str2
+    - str1.startswith(str2) # delivers Boolean Value
+    - str1.endswith(str2)
+-   For determining the type of an item
+    - isinsrancw(item, dataType) # returns a Boolean Value
+'''
+#  str1.isdigit() = all of str1's charachters are digits
+#  str1.isalpha() = all of str1's charchters are letters of the alphabet
+#  str1.isalnum() = all of str1's charachters are letters of the alphabet or digits
+#  str1.islower() = has atleast 1 alphabetic charachter and all are lower case
+# str.isupper() = 
+#  str1.isspace() = contains only whitespace charachters
+
+'''
+Simplifing Conditions
+list or tuples can sometimes be used to simplify long compound conditions
+(state == "MD") or (state == "VA") or (state == "WV") or (state == "DE")
+
+'''
+# state = "CA"
+# states = ["MD", "WD", "CA", "CO"]
+
+# is_in_list = state in states
+# print(is_in_list) # with CA in the list of states it will print True
+# # if i did print(not(is_in_list) and "WA" in states)
+
+# print(not(is_in_list) and "WD" in states) # False
+
+# When coding (x > 10) and (x <= 20) we can use;
+    # 10 < x <= 20
+
+'''
+Use of De Morgan's Laws
+
+not(cond1 and cond2)
+is the same as
+not(cond1) or not(cond2)
+&
+not(cond1 or cond2)
+is the same as
+not (cond1) and not(cond2)
+'''
