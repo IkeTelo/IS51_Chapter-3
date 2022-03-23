@@ -10,9 +10,18 @@ if-else statements
         else:
             indent block of statements
 '''
+# from multiprocessing import Condition
+
+# grade = 98
+# condition = grade >= 90
+# if condition:
+#     print("your grade is A")
+# else:
+#     print("Your grade is not A")
+
 #  Examples 1: Program finds large of two numbers input by user.
 
-## Determine the larger of the two numbers.
+# Determine the larger of the two numbers.
 #  Obtain the two numbers from the user.
 # num1 = eval(input("Enter the first number: "))
 # num2 = eval(input("Enter the second number: "))
@@ -22,4 +31,70 @@ if-else statements
 # else:
 #     largeValue = num2 # execute this statement if the condition is false
 # print("The larger value is", str(largeValue) + ".")
+'''
+is-else Statement
+Example 2: if-else statment in program has relational operators in its condition.
+'''
+# ## A quiz.
+# #  Obtain answer to question.
+# answer = eval(input("how many gallons does a ten-gallon hat hold? "))
+# # Evaluate answer.
+# if (0.5 <= answer <= 1):
+#     print("good, ", end="")
+# else:
+#     print("No, ", end="")
+# print("it holds about 3/4 of a gallon.")
+# # How many gallons does a ten-gallon hat hold? = 10
+# # No, it holds about 3/4 of a gallon.
+
+'''
+The else part of an if-else statement can be omitted
+when the conditions is false
+    - Execution continues with line after if statement block
+Example 3: Program contains two if statments
+'''
+# ## find the largest of three numbers.
+# #  Input the three numbers.
+# firstNumber = eval(input("Enter first number: "))
+# secondNumber = eval(input("Enter second number: "))
+# thirdNumber = eval(input("Enter third number: "))
+# # Determine and display the largest value.
+# max = firstNumber
+# if secondNumber > max:
+#     max = secondNumber
+# if thirdNumber > max:
+#     max = thirdNumber
+# print("The largest number is", str(max) + ".")
+
+
+'''
+Nested if-else Statements
+    - Indented blocks of if-else and if statments can contain other if-else and statments
+        - The if-else statments are said to be nested
+    - Consider the taks of interpreting a beacon
+        - The color of the beacon light atop Boston's old John Hancock forecasts the weather
+### Steady blue, clear view; Flashing blue, clouds due; Steady red, rain ahead; Flashing red, snow instead.
+
+Example 4: Program request a color (Blue or Read) and a mode (Steady or Flashing) as input
+    - Then display the weather forcase
+'''
+
+# ##Interpret weather beacon.
+# #  Obtain color and mode.
+# color = input("Enter a color (BLUE or RED): ")
+# mode = input("Enter a mode (STEADY or FLASHING): ")
+# mode = mode.upper()
+# #  Analyze responses and display weather forecast.
+# result = ""
+# if color == "BLUE":
+#     if mode == "STEADY":
+#         result = "Clear View"
+#     else:   #mode is FLASHING
+#         result = "Clouds due"
+# else: #color is READ
+#     if mode == "STEADY":
+#             result = "Rain Ahead."
+#     else: # mode is FLASHING
+#             result = "Snow Instead."
+# print("The weather forecast is", result)   
 
