@@ -66,6 +66,18 @@ Example 3: Program contains two if statments
 #     max = thirdNumber
 # print("The largest number is", str(max) + ".")
 
+# numbers = [1, 28, 90]
+# print(max(numbers))
+
+# numbers = []
+# firstNumber = eval(input("Enter first number: "))
+# secondNumber = eval(input("Enter second number: "))
+# thirdNumber = eval(input("Enter third number: "))
+# numbers.append(firstNumber)
+# numbers.append(secondNumber)
+# numbers.append(thirdNumber)
+
+# print("The largest number is", + str(max(numbers)) + ",")
 
 '''
 Nested if-else Statements
@@ -83,6 +95,7 @@ Example 4: Program request a color (Blue or Read) and a mode (Steady or Flashing
 # #  Obtain color and mode.
 # color = input("Enter a color (BLUE or RED): ")
 # mode = input("Enter a mode (STEADY or FLASHING): ")
+# color = color.upper()
 # mode = mode.upper()
 # #  Analyze responses and display weather forecast.
 # result = ""
@@ -98,3 +111,57 @@ Example 4: Program request a color (Blue or Read) and a mode (Steady or Flashing
 #             result = "Snow Instead."
 # print("The weather forecast is", result)   
 
+"""Example 5"""
+
+# ## Evaluate profit
+# # Obtain input from user.
+# costs = eval (input("Enter total costs: "))
+# revenue = eval(input("Enter total revenue: "))
+# # Determin and display profit or loss
+# if costs == revenue:
+#     result = "Break even."
+# else:
+#     if costs < revenue:
+#         profit = revenue - costs
+#         result = "Profit is ${0:,.2f}".format(profit)
+#     else:
+#         loss = costs - revenue
+#         result = "Loss is ${0:,.2f}.".format(loss)
+# print(result)
+'''Simplified'''
+# costs = eval (input("Enter total costs: "))
+# revenue = eval(input("Enter total revenue: "))
+
+# if costs == revenue:
+#     print("break Even.")
+# result = "is ${0:,.2f}".format(revenue - costs)
+# if (revenue - costs) < 0:
+#     print("Loss " + result)
+# print("Profit " + result)
+
+"""The elif Clause""" '''Example 6'''
+
+# num1 = eval(input("Enter the first number: "))
+# num2 = eval(input("Enter the second number: "))
+# if num1 > num2:
+#     print("The larger value is", str(num1) + ",")
+# elif num2 > num1:
+#     print("The larger value is", str(num2) + ",")
+# else:
+#     print("the two values are equal.")
+
+'''Example 7'''
+# DO AT HOME!!!
+
+'''Example 8'''
+
+gpa = eval(input("Enter your gps: "))
+if gpa >= 3.9:
+    honors = " summa cum laude."
+elif gpa >= 3.6:
+    honors = " magna cum laude."
+elif gpa >= 3.3:
+    honors = " cum laude."
+else:
+    honors = "."
+print("Your graduation" + honors)
