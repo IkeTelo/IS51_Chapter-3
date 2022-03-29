@@ -155,13 +155,41 @@ Example 4: Program request a color (Blue or Read) and a mode (Steady or Flashing
 
 '''Example 8'''
 
-gpa = eval(input("Enter your gps: "))
-if gpa >= 3.9:
-    honors = " summa cum laude."
-elif gpa >= 3.6:
-    honors = " magna cum laude."
-elif gpa >= 3.3:
-    honors = " cum laude."
+# gpa = eval(input("Enter your gps: "))
+# if gpa >= 3.9:
+#     honors = " summa cum laude."
+# elif gpa >= 3.6:
+#     honors = " magna cum laude."
+# elif gpa >= 3.3:
+#     honors = " cum laude."
+# else:
+#     honors = "."
+# print("Your graduation" + honors)
+
+'''Example 9'''
+
+# num1 = input("Enter fist number: ")
+# num2 = input("Enter second number: ")
+# if num1.isdigit() and num2.isdigit():
+#     print("The sum is", str(eval(num1) + eval(num2)) + ".")
+# elif not num1.isdigit():
+#     if not num2.isdigit():
+#         print("Neither entry was a proper number.")
+#     print("The first entry was not a proper number.")
+# print("The second entry was not a proper number.")
+
+'''Example 10'''
+
+if 7:
+    print("A nonzero numer is true.")
 else:
-    honors = "."
-print("Your graduation" + honors)
+    print("The number zero is false.")
+if []:
+    print("A nonempty list is true.")
+else:
+    print("An empty list is fasle.")
+if ["spam"]:
+    print("A nonempty list is true.")
+else:
+    print("The empty list is false.")
+
