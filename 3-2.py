@@ -180,16 +180,16 @@ Example 4: Program request a color (Blue or Read) and a mode (Steady or Flashing
 
 '''Example 10'''
 
-if 7:
-    print("A nonzero numer is true.")
-else:
-    print("The number zero is false.")
-if []:
-    print("A nonempty list is true.")
-else:
-    print("An empty list is fasle.")
-if ["spam"]:
-    print("A nonempty list is true.")
-else:
-    print("The empty list is false.")
+# if 7:
+#     print("A nonzero numer is true.")
+# else:
+#     print("The number zero is false.")
+# if []:
+#     print("A nonempty list is true.")
+# else:
+#     print("An empty list is fasle.")
+# if ["spam"]:
+#     print("A nonempty list is true.")
+# else:
+#     print("The empty list is false.")
 
